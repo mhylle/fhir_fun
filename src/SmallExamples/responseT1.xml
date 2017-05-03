@@ -1,0 +1,22 @@
+<value="201Created"/>
+<locationvalue="Observation/7453/_history/1"/>
+<etagvalue="1"/><lastModifiedvalue="2017-05-03T17:05:45.742-04:00"/></response></entry>
+<entry>
+<response>
+    <value="201Created"/><locationvalue="Observation/7454/_history/1"/><etagvalue="1"/>
+    <lastModifiedvalue
+    ="2017-05-03T17:05:45.742-04:00"/>
+</response>
+</entry><entry>
+<response>
+    <value="201Created"/><locationvalue="Observation/7455/_history/1"/><etagvalue="1"/>
+    <lastModifiedvalue
+    ="2017-05-03T17:05:45.742-04:00"/>
+</response>
+</entry><entry>
+<response>
+    <value="201Created"/><locationvalue="Observation/7456/_history/1"/><etagvalue="1"/>
+    <lastModifiedvalue
+    ="2017-05-03T17:05:45.743-04:00"/>
+</response>
+</entry></Bundle>

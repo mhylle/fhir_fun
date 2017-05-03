@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"></type>
+    <entry>
+        <resource>
+            <Organization>
+                <id value="17C7D86E-664F-4FE2-91D7-AF9A8E47311E"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UWEARME - A DIVISION OF HEALTH GIZMOS
+                        CORP
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.nationalorgidentifier.gov/ids"/>
+                    <value value="UWEARME"/>
+
+                </identifier>
+                <name value="UWEARME"/>
+                <address>
+                    <line value="2000 WEARABLE DRIVE"/>
+                    <city value="ANN ARBOR"/>
+                    <state value="MI"/>
+                    <country value="US"/>
+                </address>
+            </Organization>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Organization?identifier=www.nationalorgidentifier.gov/ids|UWEARME"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Patient>
+                <id value="0fc374a1-a226-4552-9683-55dd510e67c9"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        Martin Hylleberg Id # 7032
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.mypatientidentifier.com/ids"/>
+                    <value value="martin.hylleberg"/>
+                </identifier>
+                <name>
+                    <family value="Hylleberg"></family>
+                    <given value="Martin"></given>
+                </name>
+                <address>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/us-core-county">
+                        <valueString value="Washtenaw"></valueString>
+                    </extension>
+                    <line value="3300 Washtenaw"></line>
+                    <city value="Ann Harbor"></city>
+                    <state value="MI"></state>
+                    <postalCode value="48104"></postalCode>
+                    <country value="US"></country>
+                </address>
+                <managingOrganization>
+                    <reference value="Organization/17C7D86E-664F-4FE2-91D7-AF9A8E47311E">
+                    </reference>
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Patient?identifier=www.mypatientidentifier.com/ids|7036"/>
+        </request>
+    </entry>
+    <!-- And more observations here: SYS BP, DIA BP, HEART RATE, RESP RATE -->
+    <entry>
+        <resource>
+            <Device>
+                <id value="01ba878a-e49d-4bac-b629-9de3fcb7e83a"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device 7036
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/dev"/>
+                    <value value="7036"/>
+                </identifier>
+                <type>
+                    <coding>
+                        <system value=" http://snomed.info/sct"/>
+                        <code value="33894003"/>
+                        <display value="Experimental Device"></display>
+                    </coding>
+                </type>
+                <manufacturer value="UWEARME"></manufacturer>
+                <expiry value="2016-12-01T10:45:00Z"/>
+                <owner>
+                    <reference value="Organization/17C7D86E-664F-4FE2-91D7-AF9A8E47311E"></reference>
+                </owner>
+                <patient>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </patient>
+            </Device>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Device?identifier=www.uwearme.com/dev|7036"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                        Systolic BP: 120 mmHg on 05122016 10:30
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/measures"/>
+                    <value value="7036-2016-12-05T10:30:00-8480-6"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8480-6"/>
+                        <display value="Systolic BP"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </subject>
+                <effectiveDateTime value="2016-12-05T10:30:00"/>
+
+                <valueQuantity>
+                    <value value="120"/>
+                    <unit value="mmHg"/>
+                </valueQuantity>
+                <device>
+                    <reference value="Device/01ba878a-e49d-4bac-b629-9de3fcb7e83a"></reference>
+                </device>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                        Diastolic BP: 80 mmHg on 05122016 10:30
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/measures"/>
+                    <value value="7036-2016-12-05T10:30:00-8462-4"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8462-4"/>
+                        <display value="Diastolic BP"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </subject>
+                <effectiveDateTime value="2016-12-05T10:30:00"/>
+
+                <valueQuantity>
+                    <value value="80"/>
+                    <unit value="mmHg"/>
+                </valueQuantity>
+                <device>
+                    <reference value="Device/01ba878a-e49d-4bac-b629-9de3fcb7e83a"></reference>
+                </device>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                        Hearth rate: 120/min on 05122016 10:30
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/measures"/>
+                    <value value="7036-2016-12-05T10:30:00-8867-4"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8867-4"/>
+                        <display value="Hearth Rate"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </subject>
+                <effectiveDateTime value="2016-12-05T10:30:00"/>
+                <valueQuantity>
+                    <value value="120"/>
+                    <unit value="/min"/>
+                </valueQuantity>
+                <device>
+                    <reference value="Device/01ba878a-e49d-4bac-b629-9de3fcb7e83a"></reference>
+                </device>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                        Respiratory rate: 15/min on 05122016 10:30
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/measures"/>
+                    <value value="7036-2016-12-05T10:30:00-9279-1"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="9279-1"/>
+                        <display value="Respiratory Rate"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </subject>
+                <effectiveDateTime value="2016-12-05T10:30:00"/>
+
+                <valueQuantity>
+                    <value value="15"/>
+                    <unit value="/min"/>
+                </valueQuantity>
+                <device>
+                    <reference value="Device/01ba878a-e49d-4bac-b629-9de3fcb7e83a"></reference>
+                </device>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+        </request>
+    </entry>
+</Bundle>
