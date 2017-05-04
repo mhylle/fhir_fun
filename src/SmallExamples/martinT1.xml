@@ -26,7 +26,7 @@
             </Organization>
         </resource>
         <request>
-            <method value="POST"/>
+            <method value="GET"/>
             <url value="Organization?identifier=www.nationalorgidentifier.gov/ids|UWEARME"/>
         </request>
     </entry>
@@ -37,7 +37,7 @@
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
-                        Martin Hylleberg Id # 7032
+                        Martin Hylleberg Id # 7520
                     </div>
                 </text>
                 <identifier>
@@ -65,8 +65,8 @@
             </Patient>
         </resource>
         <request>
-            <method value="POST"/>
-            <url value="Patient?identifier=www.mypatientidentifier.com/ids|7036"/>
+            <method value="GET"/>
+            <url value="Patient?identifier=www.mypatientidentifier.com/ids|7520"/>
         </request>
     </entry>
     <!-- And more observations here: SYS BP, DIA BP, HEART RATE, RESP RATE -->
@@ -76,12 +76,12 @@
                 <id value="01ba878a-e49d-4bac-b629-9de3fcb7e83a"/>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device 7036
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device 7520
                     </div>
                 </text>
                 <identifier>
                     <system value="www.uwearme.com/dev"/>
-                    <value value="7036"/>
+                    <value value="7520"/>
                 </identifier>
                 <type>
                     <coding>
@@ -102,7 +102,7 @@
         </resource>
         <request>
             <method value="POST"/>
-            <url value="Device?identifier=www.uwearme.com/dev|7036"/>
+            <url value="Device?identifier=www.uwearme.com/dev|7520"/>
         </request>
     </entry>
     <entry>
@@ -110,13 +110,13 @@
             <Observation>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7520
                         Systolic BP: 120 mmHg on 05122016 10:30
                     </div>
                 </text>
                 <identifier>
                     <system value="www.uwearme.com/measures"/>
-                    <value value="7036-2016-12-05T10:30:00-8480-6"/>
+                    <value value="7520-2016-12-05T10:30:00-8480-6"/>
                 </identifier>
                 <status value="final"/>
                 <code>
@@ -142,7 +142,7 @@
         </resource>
         <request>
             <method value="POST"/>
-            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7520"/>
         </request>
     </entry>
     <entry>
@@ -150,13 +150,13 @@
             <Observation>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7520
                         Diastolic BP: 80 mmHg on 05122016 10:30
                     </div>
                 </text>
                 <identifier>
                     <system value="www.uwearme.com/measures"/>
-                    <value value="7036-2016-12-05T10:30:00-8462-4"/>
+                    <value value="7520-2016-12-05T10:30:00-8462-4"/>
                 </identifier>
                 <status value="final"/>
                 <code>
@@ -182,7 +182,7 @@
         </resource>
         <request>
             <method value="POST"/>
-            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7520"/>
         </request>
     </entry>
     <entry>
@@ -190,13 +190,13 @@
             <Observation>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7520
                         Hearth rate: 120/min on 05122016 10:30
                     </div>
                 </text>
                 <identifier>
                     <system value="www.uwearme.com/measures"/>
-                    <value value="7036-2016-12-05T10:30:00-8867-4"/>
+                    <value value="7520-2016-12-05T10:30:00-8867-4"/>
                 </identifier>
                 <status value="final"/>
                 <code>
@@ -221,7 +221,7 @@
         </resource>
         <request>
             <method value="POST"/>
-            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7520"/>
         </request>
     </entry>
     <entry>
@@ -229,13 +229,13 @@
             <Observation>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7036
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7520
                         Respiratory rate: 15/min on 05122016 10:30
                     </div>
                 </text>
                 <identifier>
                     <system value="www.uwearme.com/measures"/>
-                    <value value="7036-2016-12-05T10:30:00-9279-1"/>
+                    <value value="7520-2016-12-05T10:30:00-9279-1"/>
                 </identifier>
                 <status value="final"/>
                 <code>
@@ -261,7 +261,7 @@
         </resource>
         <request>
             <method value="POST"/>
-            <url value="Observation?identifier=www.uwearme.com/obs|7036"/>
+            <url value="Observation?identifier=www.uwearme.com/obs|7520"/>
         </request>
     </entry>
 </Bundle>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"></type>
+    <entry>
+        <resource>
+            <Organization>
+                <id value="17C7D86E-664F-4FE2-91D7-AF9A8E47311E"/>
+                <identifier>
+                    <system value="www.nationalorgidentifier.gov/ids"/>
+                    <value value="7995"/>
+                </identifier>
+                <name value="MartinsOrganization"/>
+                <address>
+                    <line value="2000 WEARABLE DRIVE"/>
+                    <city value="ANN ARBOR"/>
+                    <state value="MI"/>
+                    <country value="US"/>
+                </address>
+            </Organization>
+        </resource>
+        <request>
+            <method value="GET"/>
+            <url value="Organization?_id=7995"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Patient>
+                <id value="0fc374a1-a226-4552-9683-55dd510e67c9"/>
+                <identifier>
+                    <system value="www.mypatientidentifier.com/ids"/>
+                    <value value="martin.hylleberg"/>
+                </identifier>
+                <name>
+                    <family value="Hylleberg"></family>
+                    <given value="Martin"></given>
+                </name>
+                <address>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/us-core-county">
+                        <valueString value="Washtenaw"></valueString>
+                    </extension>
+                    <line value="3300 Washtenaw"></line>
+                    <city value="Ann Harbor"></city>
+                    <state value="MI"></state>
+                    <postalCode value="48104"></postalCode>
+                    <country value="US"></country>
+                </address>
+                <managingOrganization>
+                    <reference value="Organization/17C7D86E-664F-4FE2-91D7-AF9A8E47311E">
+                    </reference>
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="GET"/>
+            <url value="Patient?_id=7996"/>
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">UW Device for Pat # 7996
+                        Diastolic BP: 85 mmHg on 05122016 10:45
+                    </div>
+                </text>
+                <identifier>
+                    <system value="www.uwearme.com/measures"/>
+                    <value value="7996-2016-12-05T10:45:00-8462-4"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8462-4"/>
+                        <display value="Diastolic BP"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/0fc374a1-a226-4552-9683-55dd510e67c9"></reference>
+                </subject>
+                <effectiveDateTime value="2016-12-05T10:45:00"/>
+
+                <valueQuantity>
+                    <value value="85"/>
+                    <unit value="mmHg"/>
+                </valueQuantity>
+                <device>
+                    <reference value="Device/01ba878a-e49d-4bac-b629-9de3fcb7e83a"></reference>
+                </device>
+            </Observation>
+        </resource>
+        <request>
+            <method value="GET"/>
+            <url value="Observation/$everything"/>
+        </request>
+    </entry>
+
+</Bundle>
