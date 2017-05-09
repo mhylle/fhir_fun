@@ -8,15 +8,13 @@
             <p>Patient Martin Hylleberg</p>
         </div>
     </text>
-    <patientTaxSituation xmlns="http://hl7.org/fhir">
-        <modifierExtension url="http://fhir.hl7fundamentals.org/berzerkistan/StructureDefinition/PatientTaxSituation">
-            <valueCoding>
-                <code value="U"></code>
-            </valueCoding>
-        </modifierExtension>
-    </patientTaxSituation>
+    <modifierExtension url="http://fhir.hl7fundamentals.org/berzerkistan/StructureDefinition/PatientTaxSituation">
+        <valueCoding>
+            <code value="U"></code>
+        </valueCoding>
+    </modifierExtension>
     <identifier>
-        <use value="usual"></use>
+        <system value="http://www.berzerkistan.gov/nhib"></system>
         <value value="martin.hylleberg"></value>
     </identifier>
     <identifier>

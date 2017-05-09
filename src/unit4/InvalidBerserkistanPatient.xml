@@ -8,11 +8,9 @@
             <p>Patient Martin Hylleberg</p>
         </div>
     </text>
-    <patientTaxSituation xmlns="http://hl7.org/fhir">
         <modifierExtension url="http://fhir.hl7fundamentals.org/berzerkistan/StructureDefinition/PatientTaxSituation">
             <valueCoding value="U"></valueCoding>
         </modifierExtension>
-    </patientTaxSituation>
     <identifier>
         <use value="usual"></use>
         <value value="martin.hylleberg"></value>
