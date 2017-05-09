@@ -8,29 +8,26 @@
             <p>Patient Martin Hylleberg</p>
         </div>
     </text>
+    <patientTaxSituation xmlns="http://hl7.org/fhir">
+        <modifierExtension url="http://fhir.hl7fundamentals.org/berzerkistan/StructureDefinition/PatientTaxSituation">
+            <valueCoding>
+                <code value="U"></code>
+            </valueCoding>
+        </modifierExtension>
+    </patientTaxSituation>
     <identifier>
         <use value="usual"></use>
+        <value value="martin.hylleberg"></value>
+    </identifier>
+    <identifier>
+        <system value="http://www.berzerkistan.gov/bni"></system>
         <value value="martin.hylleberg"></value>
     </identifier>
     <name>
         <family value="Hylleberg"></family>
         <given value="Martin"></given>
     </name>
-    <telecom>
-        <system value="phone"></system>
-        <value value="(03) 555 6789"></value>
-        <use value="home"></use>
-    </telecom>
     <gender value="male"></gender>
     <birthDate value="1970-03-02"></birthDate>
-    <address>
-        <extension url="http://hl7.org/fhir/StructureDefinition/us-core-county">
-            <valueString value="Washtenaw"></valueString>
-        </extension>
-        <line value="3300 Washtenaw"></line>
-        <city value="Ann Harbor"></city>
-        <state value="MI"></state>
-        <postalCode value="48104"></postalCode>
-        <country value="US"></country>
-    </address>
+
 </Patient>
